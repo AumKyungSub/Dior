@@ -1,0 +1,816 @@
+@charset "uft-8";
+body {
+  font: 14px "Noto Sans KR", sans-serif;
+  color: #211e1e;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Safe-area Width 1280px */
+.w1280 {
+  width: 1280px;
+  margin: 0 auto;
+}
+/* Button Design */
+input[type="button"] {
+  width: 152px;
+  height: 48px;
+  border: none;
+  background-color: #f4cee4;
+  font: bold 14px "Noto Sans KR", sans-serif;
+  color: #211e1e;
+  cursor: pointer;
+}
+/* Pink Box */
+.pink_box {
+  width: 14px;
+  height: 10px;
+  line-height: 10px;
+  color: #f4cee4;
+}
+/* Pink Line */
+hr:not(.about_circle_move_area hr) {
+  width: 110px;
+  border: 2px solid #f4cee4;
+}
+
+/* Header */
+header {
+  height: 700px;
+  padding-top: 40px;
+  /* 배경 이미지 */
+  background: center no-repeat url("../images/dior_header_back.png");
+  background-size: cover;
+}
+/* header_top class 영역 */
+.header_top {
+  height: 50px;
+  margin-bottom: 200px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_top_cover {
+  height: inherit;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.header_top_cover nav ul {
+  font-weight: 500;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.header_top_cover nav ul li {
+  padding-left: 16px;
+}
+.header_top_cover nav ul li a:hover {
+  font-weight: bold;
+  color: #fff;
+}
+.header_top_cover h2 {
+  /* 검색 아이콘(이미지)영역으로 width값 할당  */
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin-left: 69px;
+  /* 이미지 수직 중앙 정렬 */
+  vertical-align: middle;
+}
+/* /header_top class 영역 */
+/* header_bottom class 영역 */
+.header_bottom > *:not(h2) {
+  margin-left: 48px;
+}
+.header_bottom h2 {
+  line-height: 1.05;
+  font-size: 72px;
+  margin-bottom: 41px;
+  font-weight: bold;
+}
+.header_bottom h2 > span {
+  margin-left: 48px !important;
+  font-size: 56px;
+  font-weight: bold;
+}
+.header_bottom p {
+  line-height: 1.18;
+  font-weight: 500;
+  color: #393939;
+}
+.header_bottom input[type="button"] {
+  margin-top: 26px;
+}
+/* /header_bottom class 영역 */
+/* /Header */
+
+/* Main */
+/* sec_1 class 영역 */
+.sec_1 {
+  height: 558px;
+  margin-bottom: 100px;
+  background-color: #f2ecf3;
+}
+/* sec_1_top class 영역 */
+.sec_1_top {
+  margin-bottom: 64px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* 포지션 (기준: 자신) */
+  position: relative;
+  top: -80px;
+  left: 0;
+  z-index: 99;
+}
+.sec_1_top div[class*="box"] {
+  width: calc(calc(1280px - 80px) / 3);
+  height: 502px;
+  margin-bottom: 64px;
+  background-color: #fff;
+}
+.sec_1_top div > *:not(article) {
+  margin: 30px 0 0 20px;
+}
+.sec_1_top div h2 {
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #393939;
+}
+.sec_1_top div h3 {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* /sec_1_top class 영역 */
+/* sec_1_bottom class 영역 */
+.sec_1_bottom {
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.sec_1_bottom p:first-child {
+  height: 14px;
+  line-height: 14px;
+}
+.sec_1_bottom p:first-child span {
+  font-weight: 500;
+}
+.sec_1_bottom p:last-child {
+  height: 14px;
+  line-height: 14px;
+  font-weight: 500;
+}
+.sec_1_bottom p:last-child img {
+  /* Right_Arrow 수직 중앙 */
+  vertical-align: middle;
+  margin: 0 0 4px 10px;
+}
+/* /sec_1_bottom class 영역 */
+/* /sec_1 class 영역 */
+/* sec_2 class 영역*/
+.sec_2 {
+  margin-bottom: 60px;
+}
+.sec_2 p {
+  line-height: 1.42;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.sec_2 hr {
+  margin: 29px auto 0;
+}
+/* /sec_2 class 영역*/
+/* sec_3 class 영역 */
+.sec_3 {
+  margin-bottom: 100px;
+}
+.sec_3_cover {
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+.sec_3_left {
+  width: 620px;
+  height: 500px;
+}
+.sec_3_left h2 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 38px;
+}
+.about_title_line {
+  width: 580px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.about_title_line h3 {
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.about_title_line h3 label {
+  cursor: pointer;
+}
+.about_title_line h3:first-child {
+  font-weight: bold;
+  color: #f4cee4;
+}
+.about_circle_move_area {
+  height: 12px;
+  margin-bottom: 54px;
+  /* 포지션 기준 (사용: .pink_circle) */
+  position: relative;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.about_circle_move_area hr {
+  width: 580px;
+  border: 1px solid #000;
+}
+.pink_circle {
+  width: 12px;
+  height: 12px;
+  background-color: #f4cee4;
+  border-radius: 100%;
+  /* 포지션 (기준: .about_cicle_move_area) */
+  position: absolute;
+  left: 84px;
+  z-index: 99;
+}
+.about_text_line {
+  margin-bottom: 80px;
+}
+.about_text_line article p {
+  line-height: 1.43;
+  color: #393939;
+}
+.about_text_line article p:first-child {
+  margin-bottom: 36px;
+}
+.about_text_line article:not(.dior_gardens) {
+  display: none;
+}
+/* input radio 사용하여 
+yellow circle: 자리이동 
+text_line h3: 컬러변경
+about_text_line p: display 설정 */
+.sec_3_left input[id*="about"] {
+  display: none;
+}
+.sec_3_left [id="about_2"]:checked ~ .about_circle_move_area div {
+  left: 290px;
+  z-index: 99;
+}
+.sec_3_left [id="about_2"]:checked ~ .about_title_line h3:nth-child(2) {
+  font-weight: bold;
+  color: #f4cee4;
+}
+.sec_3_left [id="about_2"]:checked ~ .about_title_line h3:nth-child(1) {
+  font-weight: normal;
+  color: #211e1e;
+}
+.sec_3_left [id="about_2"]:checked ~ .about_text_line .floral_science {
+  display: block;
+}
+.sec_3_left
+  [id="about_2"]:checked
+  ~ .about_text_line
+  article:not(.floral_science) {
+  display: none;
+}
+
+.sec_3_left [id="about_3"]:checked ~ .about_circle_move_area div {
+  left: 520px;
+  z-index: 99;
+}
+.sec_3_left [id="about_3"]:checked ~ .about_title_line h3:nth-child(3) {
+  font-weight: bold;
+  color: #f4cee4;
+}
+.sec_3_left [id="about_3"]:checked ~ .about_title_line h3:nth-child(1) {
+  font-weight: normal;
+  color: #211e1e;
+}
+.sec_3_left [id="about_3"]:checked ~ .about_text_line .science_of_living {
+  display: block;
+}
+.sec_3_left
+  [id="about_3"]:checked
+  ~ .about_text_line
+  article:not(.science_of_living) {
+  display: none;
+}
+/* /input radio 사용하여 yellow circle & text_line & about_text_line 위치 및 컬러 변경 */
+.sec_3_left_last {
+  height: 14px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sec_3_left_last p {
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #393939;
+  margin-right: 10px;
+}
+/* sec_3_right class 영역 */
+.sec_3 .sec_3_right {
+  width: 620px;
+  height: 500px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+.sec_3_right article {
+  width: 290px;
+  height: 500px;
+}
+.sec_3_right article:first-child {
+  background: 0 -250px no-repeat url("../images/dior_sec_half_first.jpg");
+}
+.sec_3_right article:last-child {
+  background: -210px -250px no-repeat url("../images/dior_sec_half_first.jpg");
+}
+/* /sec_3 class 영역 */
+/* sec_4 class 영역 */
+.sec_4 {
+  height: 896px;
+  margin-bottom: 100px;
+}
+/* sec_4_top class 영역 */
+.sec_4_top {
+  height: 560px;
+  padding-top: 80px;
+  background: center no-repeat url("../images/dior_video_back.jpg");
+  background-size: cover;
+  opacity: 0.6;
+  text-align: center;
+}
+.sec_4_top_1 h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.sec_4_top_1 p {
+  line-height: 1.29;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.sec_4_top_1 hr {
+  margin: 23px auto 36px;
+}
+.sec_4_pink {
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec_4_pink h3 {
+  margin-right: 28px;
+  color: #fff;
+}
+/* /sec_4_top class 영역 */
+/* sec_4_bottom class 영역 */
+.sec_4_bottom {
+  text-align: center;
+  /* 포지션 (기준: 자신) */
+  position: relative;
+  top: -260px;
+  z-index: 99;
+}
+/* /sec_4_bottom class 영역 */
+/* /sec_4 class 영역 */
+/* sec_5 */
+.sec_5 {
+  margin-bottom: 100px;
+}
+.sec_5_cover {
+  height: 500px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+/* sec_5_left class 영역 */
+.sec_5_left {
+  width: 620px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+.sec_5_left article {
+  width: 290px;
+  height: 500px;
+}
+.sec_5_left article:first-child {
+  background: 0 0 no-repeat url("../images/dior_sec_half_second.png");
+}
+.sec_5_left article:last-child {
+  background: -290px 0 no-repeat url("../images/dior_sec_half_second.png");
+}
+/* /sec_5_left class 영역 */
+/* sec_5_right class 영역 */
+.sec_5_right {
+  width: 550px;
+}
+.sec_5_right h2 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+.sec_5_right > p {
+  line-height: 1.64;
+  color: #393939;
+}
+.sec_5_right hr {
+  margin: 36px 0;
+}
+.sec_5_left_last {
+  margin-top: 103px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sec_5_left_last p {
+  font-weight: bold;
+  margin-right: 9px;
+}
+/* /sec_5_right class 영역 */
+/* /sec_5 */
+/* sec_6 */
+.sec_6 {
+  height: 692px;
+  padding-top: 70px;
+  background-color: #f2ecf3;
+}
+.sec_6_cover {
+  height: 622px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+.sec_6_cover > section {
+  width: 550px;
+}
+/* sec_6_left class 영역 */
+.sec_6_left [id*="plus"] {
+  display: none;
+}
+.sec_6_left h2 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.sec_6_left article {
+  height: 92px;
+  border-bottom: 1px solid #5e5d5d;
+}
+.sec_6_left article h4 {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.sec_6_left > .faq_1 {
+  height: 150px;
+}
+.sec_6_left > .faq_1 p {
+  line-height: 1.75;
+  color: #393939;
+  margin: 0 0 12px 15px;
+}
+.sec_6_left article:not(.faq_1) {
+  /* 플렉스 */
+  display: flex;
+  align-items: center;
+}
+.sec_6_left article > p:not(.faq_1 > p) {
+  display: none;
+}
+/* sec_6_left 목록 줄이기 늘리기 */
+.sec_6_left [id="plus_2"]:checked ~ article {
+  height: 92px;
+  border-bottom: 1px solid #5e5d5d;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_1 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_1 h3 label::after {
+  content: "+ WHY CHOOSE DIOR?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_2 p {
+  display: block;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_2 {
+  height: 150px !important;
+  margin-top: 32px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.sec_6_left [id="plus_2"]:checked ~ article h3 {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_2 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_2 h3 label::after {
+  content: "- HOW CAN I GET A RECEIPT FOR MY ONLINE PURCHASE?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_2 p {
+  line-height: 1.75;
+  color: #393939;
+  margin: 0 0 12px 15px;
+}
+.sec_6_left [id="plus_2"]:checked ~ .faq_1 p {
+  display: none;
+}
+
+.sec_6_left [id="plus_3"]:checked ~ article {
+  height: 92px;
+  border-bottom: 1px solid #5e5d5d;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_1 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_1 h3 label::after {
+  content: "+ WHY CHOOSE DIOR?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_2 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_2 h3 label::after {
+  content: "+ HOW CAN I GET A RECEIPT FOR MY ONLINE PURCHASE?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_3 p {
+  display: block;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_3 {
+  height: 150px !important;
+  margin-top: 32px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.sec_6_left [id="plus_3"]:checked ~ article h3 {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_3 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_3 h3 label::after {
+  content: "- HOW DO I SIGN UP FOR A KLARNA ACCOUNT?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_3 p {
+  line-height: 1.75;
+  color: #393939;
+  margin: 0 0 12px 15px;
+}
+.sec_6_left [id="plus_3"]:checked ~ .faq_1 p {
+  display: none;
+}
+
+.sec_6_left [id="plus_4"]:checked ~ article {
+  height: 92px;
+  border-bottom: 1px solid #5e5d5d;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_1 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_1 h3 label::after {
+  content: "+ WHY CHOOSE DIOR?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_2 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_2 h3 label::after {
+  content: "+ HOW CAN I GET A RECEIPT FOR MY ONLINE PURCHASE?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_3 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_3 h3 label::after {
+  content: "+ HOW DO I SIGN UP FOR A KLARNA ACCOUNT?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_4 p {
+  display: block;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_4 {
+  height: 150px !important;
+  margin-top: 32px;
+  /* 플렉스 */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.sec_6_left [id="plus_4"]:checked ~ article h3 {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_4 h3 label h4 {
+  display: none;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_4 h3 label::after {
+  content: "- HOW CAN I CONTACT DIOR?";
+  cursor: pointer;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_4 p {
+  line-height: 1.75;
+  color: #393939;
+  margin: 0 0 12px 15px;
+}
+.sec_6_left [id="plus_4"]:checked ~ .faq_1 p {
+  display: none;
+}
+/* /sec_6_left 목록 줄이기 늘리기 */
+/* /sec_6_left class 영역 */
+/* sec_6_right class 영역 */
+.sec_6_right h2 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 64px;
+}
+.sec_6_text_cover {
+  height: 138px;
+  margin-bottom: 100px;
+  padding-left: 20px;
+}
+.sec_6_text_title {
+  height: 60px;
+  margin-bottom: 12px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sec_6_text_title h3 {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.sec_6_text_cover p {
+  line-height: 1.9;
+  color: #393939;
+  margin-bottom: 12px;
+}
+/* /sec_6_right class 영역 */
+/* /sec_6 */
+/* sec_7 */
+.sec_7 {
+  background-color: #f4cee4;
+}
+.sec_7_cover {
+  height: 230px;
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec_7_cover h2 {
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.sec_7_cover h2 span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #393939;
+}
+.sec_7_cover div:last-child input[type="button"] {
+  width: 150px !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+/* /sec_7 */
+/* /Main */
+
+/* Footer */
+/* footer_bottom class 영역 */
+footer {
+  height: 550px;
+  padding-top: 130px;
+  background-color: #d4bdca;
+}
+.footer_cover {
+  border-bottom: 1px solid #f2ecf3;
+  margin-bottom: 36px;
+}
+.footer_top_cover {
+  /* 플렉스 */
+  display: flex;
+  justify-content: space-between;
+}
+.footer_top_left {
+  width: 440px;
+  height: 288px;
+}
+.footer_top_left h2 {
+  margin-bottom: 16px;
+}
+.footer_top_left p {
+  line-height: 1.9;
+  color: #393939;
+  margin-bottom: 11px;
+}
+.footer_top_left p:nth-child(4) {
+  margin-bottom: 39px;
+}
+.footer_top_left a {
+  margin-right: 20px;
+}
+.footer_top_right {
+  width: 790px;
+  height: 288px;
+}
+.footer_top_right_cover {
+  /* 플렉스 */
+  display: flex;
+}
+.footer_top_right_cover dl:first-child {
+  margin-left: 20px;
+}
+.footer_top_right_cover dl {
+  margin-right: 180px;
+}
+.footer_top_right_cover dt {
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.footer_top_right_cover dd {
+  line-height: 14px;
+  color: #393939;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+.footer_top_right_cover .dl_3 dd {
+  width: 130px !important;
+}
+.footer_top_right_cover dd a:hover {
+  color: #f2ecf3;
+}
+.footer_bottom p {
+  line-height: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+/* /footer_bottom class 영역 */
+/* /Footer */
